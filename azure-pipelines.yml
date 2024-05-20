@@ -4,9 +4,28 @@
 # https://aka.ms/yaml
 
 trigger:
- branches:
-  include:
-  - main
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+      - products/storage/*
+    exclude:
+    - products/**
+    - pipelines/**
+
+pr:
+  autoCancel: false
+  branches:
+    include:
+      - 'main'
+  paths:
+    include:
+      - products/storage/*
+    exclude:
+      - products/**
+      - pipelines/**
 
 pool:
   vmImage: ubuntu-latest
