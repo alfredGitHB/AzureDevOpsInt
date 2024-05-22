@@ -16,17 +16,17 @@ trigger:
     - products/**
     - pipelines/**
 
-pr:
-  autoCancel: false
-  branches:
-    include:
-      - 'main'
-  paths:
-    include:
-      - products/storage/*
-    exclude:
-      - products/**
-      - pipelines/**
+pr: none
+  # autoCancel: false
+  # branches:
+  #   include:
+  #     - 'main'
+  # paths:
+  #   include:
+  #     - products/storage/*
+  #   exclude:
+  #     - products/**
+  #     - pipelines/**
 
 pool:
   vmImage: ubuntu-latest
