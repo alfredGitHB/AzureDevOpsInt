@@ -28,6 +28,7 @@ pr:
     exclude:
       - products/**
       - pipelines/**
+  drafts: true    
 
 pool:
   vmImage: ubuntu-latest
