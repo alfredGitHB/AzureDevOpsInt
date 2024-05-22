@@ -24,6 +24,7 @@ pr:
   paths:
     include:
       - products/storage/*
+      - products/storage/*
     exclude:
       - products/**
       - pipelines/**
