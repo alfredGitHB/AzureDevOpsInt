@@ -11,12 +11,12 @@ trigger:
     - main
   paths:
     include:
-      - products/storage/*
+    - products/storage/*
     exclude:
     - products/**
     - pipelines/**
 
-pr:
+pr: 
   autoCancel: false
   branches:
     include:
@@ -24,9 +24,11 @@ pr:
   paths:
     include:
       - products/storage/*
+      - products/storage/*
     exclude:
       - products/**
       - pipelines/**
+  drafts: true    
 
 pool:
   vmImage: ubuntu-latest
