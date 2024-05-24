@@ -57,20 +57,20 @@ stages:
           echo See https://aka.ms/yaml
         displayName: 'Run a multi-line script'
 
-- stage: 'Deploy'
-  displayName: 'Build the web application'
-  jobs: 
-  - job: 'Deploy'
-    displayName: 'Build job'
-    pool:
-      vmImage: 'ubuntu-20.04'
-      demands:
-      - npm
-    steps:
-      - script: echo Hello, world!
-        displayName: 'Run a one-line script'
+# - stage: 'Deploy'
+#   displayName: 'Build the web application'
+#   jobs: 
+#   - job: 'Deploy'
+#     displayName: 'Build job'
+#     pool:
+#       vmImage: 'ubuntu-20.04'
+#       demands:
+#       - npm
+#     steps:
+#       - script: echo Hello, world!
+#         displayName: 'Run a one-line script'
 
-      - script: |
-          echo Add other tasks to build, test, and deploy your project.
-          echo See https://aka.ms/yaml
-        displayName: 'Run a multi-line script'
+#       - script: |
+#           echo Add other tasks to build, test, and deploy your project.
+#           echo See https://aka.ms/yaml
+#         displayName: 'Run a multi-line script'
