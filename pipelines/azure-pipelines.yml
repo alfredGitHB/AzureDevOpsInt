@@ -11,6 +11,8 @@ trigger:
     - main
     - childbranch*
   paths:
+    include:
+    - products/storage/*
     exclude:
     - products/**
     - pipelines/**
