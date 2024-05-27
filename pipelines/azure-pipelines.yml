@@ -5,17 +5,8 @@
 # test
 
 trigger:
-  batch: true
-  branches:
-    include:
-    - dev
-    - childbranch*
-  paths:
-    include:
-    - products/storage/*
-    exclude:
-    - products/**
-    - pipelines/**
+- childbranch/*
+
 
 pr: 
   autoCancel: false
