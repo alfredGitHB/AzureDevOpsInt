@@ -10,6 +10,10 @@ trigger:
     include:
     - main
     - childbranch*
+  paths:
+    exclude:
+    - products/**
+    - pipelines/**
 
 pr: 
   autoCancel: false
