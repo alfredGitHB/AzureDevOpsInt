@@ -12,7 +12,7 @@ trigger:
     - childbranch*
   paths:
     include:
-    - "*"
+    - '*'
     exclude:
     - products/**
     - pipelines/**
