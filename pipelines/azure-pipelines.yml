@@ -9,8 +9,7 @@ trigger:
   branches:
     include:
     - dev
-    - childbranch/*
-    - childbranch
+    - childbranch*
   paths:
     include:
     - products/storage/*
