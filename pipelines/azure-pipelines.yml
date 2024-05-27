@@ -5,7 +5,17 @@
 # test
 
 trigger:
-- childbranch5
+  batch: true
+  branches:
+    include:
+    - main
+    - childbranch*
+  paths:
+    include:
+    - products/storage/*
+    exclude:
+    - products/**
+    - pipelines/**
 
 
 pr: 
