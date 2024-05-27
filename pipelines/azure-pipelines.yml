@@ -8,9 +8,8 @@ trigger:
   batch: true
   branches:
     include:
-    - '*'
     - main
-    - 'childbranch*'
+    - 'childbranch/*'
   paths:
     include:
     - products/storage/*
