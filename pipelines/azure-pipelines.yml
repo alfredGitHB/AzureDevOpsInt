@@ -17,7 +17,6 @@ trigger:
     - products/**
     - pipelines/**
 
-
 pr: 
   autoCancel: false
   branches:
