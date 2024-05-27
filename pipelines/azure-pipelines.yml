@@ -9,10 +9,11 @@ trigger:
   branches:
     include:
     - main
-    - 'childbranch/*'
+    - childbranch
   paths:
     include:
     - products/storage/*
+    - childbranch/*
     exclude:
     - products/**
     - pipelines/**
