@@ -10,12 +10,6 @@ trigger:
     include:
     - main
     - childbranch*
-  paths:
-    include:
-    - '*'
-    exclude:
-    - products/**
-    - pipelines/**
 
 pr: 
   autoCancel: false
