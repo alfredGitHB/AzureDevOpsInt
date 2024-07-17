@@ -23,10 +23,10 @@ pr:
   paths:
     include:
       - products/storage/*
-    exclude:
-      - products/**
-      - pipelines/**
-  drafts: true
+  #   exclude:
+  #     - products/**
+  #     - pipelines/**
+  # drafts: true
 
 pool:
   vmImage: ubuntu-latest
