@@ -20,13 +20,12 @@ pr:
   branches:
     include:
       - alfred*
+      - main
   paths:
     include:
       - products/storage/*
-  #   exclude:
-  #     - products/**
-  #     - pipelines/**
-  # drafts: true
+    exclude:  
+       - pipelines/**
 
 pool:
   vmImage: ubuntu-latest
