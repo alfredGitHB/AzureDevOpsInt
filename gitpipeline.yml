@@ -19,7 +19,7 @@ pr:
   autoCancel: false
   branches:
     include:
-      - main
+      - alfred*
   paths:
     include:
       - products/storage/*
