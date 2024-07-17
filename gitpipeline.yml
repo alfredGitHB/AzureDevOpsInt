@@ -19,7 +19,7 @@ pr:
   autoCancel: false
   branches:
     include:
-      - 'main'
+      - main
   paths:
     include:
       - products/storage/*
